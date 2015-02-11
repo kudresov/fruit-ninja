@@ -59,6 +59,31 @@ body {
   margin-top: 28px;
 }
 
+.main-section{
+
+  width:100%;
+}
+article.fruit-name {
+  width: 50%;
+  display: inline-block;
+}
+article.fruit-info.f1 {
+  width:50%;
+  float:right;
+  display:none;
+}
+article.fruit-info.f2 {
+  width:50%;
+  float:right;
+  display:none;
+}
+article.fruit-info.f3 {
+  width:50%;
+  float:right;
+  display:none;
+}
+
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
@@ -77,3 +102,19 @@ body {
     border-bottom: 0;
   }
 }
+
+@media only screen and (min--width: 375px) and (max-width: 667px) {
+  article.fruit-info.f2 {
+    width:100%;
+    float:none;
+    display:none;
+  }
+  article.fruit-info.f3 {
+    width:100%;
+    float:none;
+    display:none;
+  }
+}
+
+
+
